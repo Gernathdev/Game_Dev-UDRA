@@ -9,7 +9,7 @@ router.get("/", (req, res)=>{
 })
 
 router.get("/signup", (req, res)=>{
-    res.sendFile(path.join(__dirname + "/pages/cadastro.html")
+    res.sendFile(path.join(__dirname + "/pages/cadastro.html"))
 })
 
 app.use(router)
