@@ -1,6 +1,6 @@
 //Importando bibliotecas necessárias
 var args = require('minimist')(process.argv.slice(2));
-import extend from 'extend';
+var extend = require('extend');
 
 //definindo a váriável do ambiente do servidor (teste ou produção)
 var environment = args.env || "test";
@@ -36,7 +36,7 @@ var conf = {
 extend(false, conf.production, common_conf);
 extend(false, conf.test, common_conf);
 
-export default config = conf[environment];
+module.exports = config = conf[environment];
 
 //conecta no banco sqlite
 //escuta as internetes nas portas 8081 (teste) e 8082 (produção)
