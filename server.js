@@ -1,1 +1,1 @@
-require(__dirname + "Resources/config.js");
+ require(__dirname + '/Resources/config.js');

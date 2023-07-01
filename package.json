@@ -4,7 +4,7 @@
   "description": "UDRA-server",
   "main": "server.js",
   "scripts": {
-    "start": "server.js",
+    "start": "server.js --env='production'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["UDRA", "Ultimate", "Dungeons", "Rappan", "Athuk", "RPG", "Game"],
