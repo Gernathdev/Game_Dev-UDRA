@@ -14,7 +14,7 @@ var common_conf = {
     environment: environment,
     max_player: 100,
     data_paths:{
-        items: __dirname + "\\Game Data\\" + "Items\\" 
+        items: __dirname + "\\Game Data\\" + "Items\\",
         maps: __dirname + "\\Game Data\\" + "maps\\"       
     },
     starting_zone: "map_start_point"
@@ -28,7 +28,7 @@ var conf = {
     },
     test: {
         ip: args.ip || "0.0.0.0",
-        port: args.port || 8082
+        port: args.port || 8082,
         database: "sqlite: //127.0.0.1/udradb_test."
     }
 };
